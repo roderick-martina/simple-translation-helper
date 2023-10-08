@@ -1,0 +1,6 @@
+{
+  "general": {
+    "greeting": "Welcome user",
+    "exit": "Bye user"
+  }
+}

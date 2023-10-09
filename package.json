@@ -1,0 +1,41 @@
+{
+  "name": "simple-translation-helper",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Translation Component library to help you translate you're application",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "vue": "yarn workspace @simple-translation-helper/vue dev",
+    "react": "yarn workspace @simple-translation-helper/react",
+    "build": "npm-run-all --parallel build:*",
+    "build:vue": "yarn workspace @simple-translation-helper/vue build",
+    "build:react": "yarn workspace @simple-translation-helper/react build",
+    "playground:vue": "yarn workspace playground-vue dev",
+    "playground:react": "yarn workspace playground-react dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roderick-martina/simple-translation-helper.git"
+  },
+  "license": "MIT",
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-tailwindcss": "^0.5.5"
+  }
+}
